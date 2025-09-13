@@ -46,9 +46,7 @@ public class TestScriptOne {
                     && oBrowser.getTitle().equals("actiTIME - Login")
                     && oBrowser.findElement(By.xpath("//img[contains(@src, 'timer.png')]")).isDisplayed()){
                 System.out.println("logout from actiTime is successful");
-                System.out.println("-----------------");
-                System.out.println("********************");
-                System.out.println("))))");
+
             }else{
                 System.out.println("Failed to logout from actiTime");
             }
