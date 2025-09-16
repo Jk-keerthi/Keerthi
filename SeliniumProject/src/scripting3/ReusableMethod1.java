@@ -172,6 +172,7 @@ public class ReusableMethod1 {
                 //VErify user is deleted
                 if (oBrowser.findElements(By.xpath("//div[@class='name']/span[text()='" + userName + "']")).size() > 0) {
                     System.out.println("Failed to delete the user");
+                    System.out.println("------");
                     return false;
                 } else {
                     System.out.println("User is deleted successful");
@@ -232,6 +233,7 @@ public class ReusableMethod1 {
                 while(it.hasNext()){
                     Map.Entry<Object, Object> mp = it.next();
                     objMap.put(mp.getKey().toString(), mp.getValue().toString());
+
                 }
                 return objMap;
             }catch(Exception e){
