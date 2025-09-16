@@ -172,7 +172,6 @@ public class ReusableMethod1 {
                 //VErify user is deleted
                 if (oBrowser.findElements(By.xpath("//div[@class='name']/span[text()='" + userName + "']")).size() > 0) {
                     System.out.println("Failed to delete the user");
-                    System.out.println("------");
                     return false;
                 } else {
                     System.out.println("User is deleted successful");
